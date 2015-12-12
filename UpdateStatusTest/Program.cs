@@ -14,6 +14,7 @@ namespace UpdateStatusTest
             inboundserv.InboundService ser = new inboundserv.InboundService();
             ser.Timeout = 5000;
 
+            //TESTs
             while (true)
             {
                 Stopwatch sWatch = new Stopwatch();
