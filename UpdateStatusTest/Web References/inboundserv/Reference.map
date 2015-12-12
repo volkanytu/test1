@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://crm.sahibinden.com.local/ISV/WebServices/SOAP/SAHIBINDEN.WebServices.SOAP.InboundService/InboundService.svc?wsdl" filename="InboundService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://crm.sahibinden.com.local/ISV/WebServices/SOAP/SAHIBINDEN.WebServices.SOAP.InboundService/InboundService.svc?xsd=xsd1" filename="InboundService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://crm.sahibinden.com.local/ISV/WebServices/SOAP/SAHIBINDEN.WebServices.SOAP.InboundService/InboundService.svc?xsd=xsd0" filename="InboundService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://crm.sahibinden.com.local/ISV/WebServices/SOAP/SAHIBINDEN.WebServices.SOAP.InboundService/InboundService.svc?xsd=xsd2" filename="InboundService1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://crm.sahibinden.com.local/ISV/WebServices/SOAP/SAHIBINDEN.WebServices.SOAP.InboundService/InboundService.svc?disco" filename="InboundService.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

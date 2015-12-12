@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://crm.sahibinden.com.local/ISV/WebServices/SOAP/SAHIBINDEN.WebServices.SOAP.InboundService/InboundService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SAHIBINDEN.Library.Utility" />
+  <xs:element name="StartCall">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="phoneNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="menuNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartCallResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SAHIBINDEN.Library.Utility" minOccurs="0" name="StartCallResult" nillable="true" type="q1:InboundResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartCallToAgent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="phoneNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="agentId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartCallToAgentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SAHIBINDEN.Library.Utility" minOccurs="0" name="StartCallToAgentResult" nillable="true" type="q2:InboundResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsAgentReady">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="agentId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsAgentReadyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SAHIBINDEN.Library.Utility" minOccurs="0" name="IsAgentReadyResult" nillable="true" type="q3:MsCrmResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCrmStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="agentId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="centralStatus" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCrmStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SAHIBINDEN.Library.Utility" minOccurs="0" name="UpdateCrmStatusResult" nillable="true" type="q4:MsCrmResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartCallToAgentFromKCM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="phoneNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="agentId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartCallToAgentFromKCMResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SAHIBINDEN.Library.Utility" minOccurs="0" name="StartCallToAgentFromKCMResult" nillable="true" type="q5:InboundResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CIFA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="connectedAgentId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="selectedAgentId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="URL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phoneNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="callId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CIFAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/SAHIBINDEN.Library.Utility" minOccurs="0" name="CIFAResult" nillable="true" type="q6:MsCrmResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartCallMeUrgent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="phoneNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="menuNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="agentId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartCallMeUrgentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SAHIBINDEN.Library.Utility" minOccurs="0" name="StartCallMeUrgentResult" nillable="true" type="q7:InboundResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateInboundUserCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="queueNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="inboundUserCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateInboundUserCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/SAHIBINDEN.Library.Utility" minOccurs="0" name="UpdateInboundUserCountResult" nillable="true" type="q8:MsCrmResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartNewCall">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="url" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartNewCallResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

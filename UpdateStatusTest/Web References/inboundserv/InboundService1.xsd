@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/SAHIBINDEN.Library.Utility" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SAHIBINDEN.Library.Utility" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://crm.sahibinden.com.local/ISV/WebServices/SOAP/SAHIBINDEN.WebServices.SOAP.InboundService/InboundService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="InboundResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" type="xs:boolean" />
+      <xs:element minOccurs="0" name="URL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InboundResult" nillable="true" type="tns:InboundResult" />
+  <xs:complexType name="MsCrmResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CrmId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ExtraInformation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HasException" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MsCrmResult" nillable="true" type="tns:MsCrmResult" />
+</xs:schema>
